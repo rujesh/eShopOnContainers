@@ -54,7 +54,6 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(HttpGlobalExceptionFilter));
-                options.Filters.Add(typeof(ValidateModelStateFilter));
             }).AddControllersAsServices();
 
             services.AddHealthChecks(checks =>
